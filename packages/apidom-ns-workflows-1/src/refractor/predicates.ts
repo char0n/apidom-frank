@@ -17,3 +17,5 @@ export const isWorkflowsSpecificationExtension = (element: MemberElement): boole
   // @ts-ignore
   return isStringElement(element.key) && startsWith('x-', toValue(element.key));
 };
+
+export const isSourceDescriptionLikeElement = isObjectElement;

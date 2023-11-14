@@ -14,5 +14,6 @@ export const getNodeType = <T extends Element>(element: T): string | undefined =
 
 export const keyMap = {
   InfoElement: ['content'],
+  SourceDescriptionElement: ['content'],
   ...keyMapBase,
 };

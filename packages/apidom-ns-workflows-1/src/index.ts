@@ -24,11 +24,14 @@ export {
   isWorkflowsSpecElement,
   isWorkflowsSpecificationElement,
   isInfoElement,
+  isSourceDescriptionElement,
+  isSourceDescriptionsElement,
 } from './predicates';
 
 export {
   isWorkflowsSpecificationLikeElement,
   isWorkflowsSpecificationExtension,
+  isSourceDescriptionLikeElement,
 } from './refractor/predicates';
 
 export { default as FixedFieldsVisitor } from './refractor/visitors/generics/FixedFieldsVisitor';
@@ -40,9 +43,10 @@ export { default as Visitor } from './refractor/visitors/Visitor';
 
 export { keyMap, getNodeType } from './traversal/visitor';
 
-// OpenAPI 3.0.x elements
+// Workflows 1.0.x elements
 export {
   WorkflowsSpecificationElement,
   WorkflowsSpecElement,
   InfoElement,
+  SourceDescriptionElement,
 } from './refractor/registration';
